@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+long long acccumulator = 1;
+
+int main()
+{
+    while (1)
+    {
+        int number;
+        cout<<"Enter a number: ";
+        cin>>number;
+        if(number < 0)
+        {
+            cout<< "No negative numbers allowed!\n";
+            return 1;
+        }
+        if(number > 20)
+        {
+            cout<<"Program will not produce correct result!\n";
+        }
+        for (; number > 0; accumulator *= number--);
+        cout<< "The factorial of"<< number<<" is"<< accumulator <<".\n";
+    }
+    
+    return 0;
+}
